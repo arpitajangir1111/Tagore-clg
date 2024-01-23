@@ -105,7 +105,7 @@ function FormExample() {
                                     onChange={(e) => setPassword(e.target.value)}
                                     required />
                                 <Form.Control.Feedback type="invalid">
-                                    Please provide a vaild password
+                                    Please provide a valid password
                                 </Form.Control.Feedback>
                             </Form.Group>
 

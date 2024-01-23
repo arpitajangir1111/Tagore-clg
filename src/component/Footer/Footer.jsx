@@ -26,6 +26,10 @@ function Footer() {
         <Col className='cols' lg={4}>
          <h2>Contact Us</h2>
          <p>Tagore PG College Gudha Gorji-333022,Jhunjhunu,Rajasthan</p>
+
+         {/* <a href="tel:8955673039">+918955673039</a> <br />
+         <a href="tel:8955673039">+918955673039</a> */}
+
          <p>+919460066518</p>
          <p>+917597607102</p>
          <p>tagore@gmail.com</p>

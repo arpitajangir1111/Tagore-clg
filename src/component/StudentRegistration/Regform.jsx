@@ -103,11 +103,11 @@ function FormExample() {
 
 
                         <Form.Group as={Col} md="4" controlId="validation">
-                            <Form.Label>UserName </Form.Label>
+                            <Form.Label>User name </Form.Label>
                             <Form.Control
                                 required
                                 type="text"
-                                placeholder="Enter your usrername"
+                                placeholder="Create a user name"
                                 value={userName}
                                 onChange={(e) => setUsername(e.target.value)}
                             />
@@ -116,8 +116,8 @@ function FormExample() {
                     </Row>
                     <Row className="mb-3">
                         <Form.Group as={Col} md="6" controlId="validationCustom03">
-                            <Form.Label>Fathers Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your Fathers name"
+                            <Form.Label>Father's Name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter your Father's name"
                                 value={fathersName}
                                 onChange={(e) => setFathername(e.target.value)}
                                 required />
@@ -126,8 +126,8 @@ function FormExample() {
                             </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group as={Col} md="3" controlId="validationCustom04">
-                            <Form.Label>Mothers Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your mothers name"
+                            <Form.Label>Mother's Name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter your mother's name"
                                 value={mothersName}
                                 onChange={(e) => setMothername(e.target.value)}
                                 required />
@@ -136,7 +136,7 @@ function FormExample() {
                             </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group as={Col} md="3" controlId="validationCustom05">
-                            <Form.Label>Phoneno.</Form.Label>
+                            <Form.Label>Phone no.</Form.Label>
                             <Form.Control type="text" placeholder="Enter your phone no."
                                 value={phoneNo}
                                 onChange={(e) => setPhoneNo(e.target.value)}
@@ -158,8 +158,8 @@ function FormExample() {
                         </Form.Group>
 
                         <Form.Group as={Col} md="3" controlId="validationCustom05">
-                            <Form.Label>password</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your Password"
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="text" placeholder="Create a password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required />

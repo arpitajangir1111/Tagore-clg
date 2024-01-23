@@ -33,7 +33,7 @@ function StudentRecord() {
     const [LocalAddress, setLocalAddress] = useState()
     const [PermanentAddress, setPermanentAddress] = useState()
     const [RegistrationDate, setRegistrationDate] = useState()
-    const [City, setCity] = useState()
+    const [District, setDistrict] = useState()
     const [State, setState] = useState()
     const [PinCode, setPinCode] = useState()
     const [validated, setValidated] = useState(false);
@@ -55,7 +55,7 @@ function StudentRecord() {
         formData.append("LocalAddress", LocalAddress);
         formData.append("PermanentAddress", PermanentAddress);
         formData.append("RegistrationDate", RegistrationDate);
-        formData.append("City", City);
+        formData.append("District", District);
         formData.append("State", State);
         formData.append("PinCode", PinCode);
 
@@ -86,7 +86,7 @@ function StudentRecord() {
             setGender('')
             setState('')
             setPinCode('')
-            setCity('')
+            setDistrict('')
         }
 
     }
@@ -185,11 +185,11 @@ function StudentRecord() {
                                 />
                             </Form.Group>
                             <Form.Group as={Col} md="4" controlId="validationCustom02">
-                                <Form.Label className='std'>Parents No.</Form.Label>
+                                <Form.Label className='std'>Parent's No.</Form.Label>
                                 <Form.Control
                                     required
                                     type="number"
-                                    placeholder="Perents number"
+                                    placeholder="Parent's number"
                                     value={ParentNo}
                                     onChange={(e) => setParentNo(e.target.value)}
                                 />
@@ -249,7 +249,7 @@ function StudentRecord() {
                                 <Form.Control
                                     required
                                     type="text"
-                                    placeholder="local addres"
+                                    placeholder="Local address"
                                     value={LocalAddress}
                                     onChange={(e) => setLocalAddress(e.target.value)}
                                 />
@@ -286,10 +286,11 @@ function StudentRecord() {
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group as={Col} md="4" >
-                                <Form.Label className='std'>Aadhar Card</Form.Label>
+                                <Form.Label className='std'>Aadhar Number</Form.Label>
                                 <Form.Control
                                     required
-                                    type="File"
+                                    type="number"
+                                    placeholder='Aadhar number'
                                     onChange={(e) => setIdproof(e.target.files[0])}
                                 >
                                 </Form.Control>
@@ -311,13 +312,13 @@ function StudentRecord() {
                         </Row>
                         <Row className="mb-3">
                             <Form.Group as={Col} md="4" controlId="validationCustom03">
-                                <Form.Label className='std'>City</Form.Label>
-                                <Form.Control type="text" placeholder="City" required
-                                    value={City}
-                                    onChange={(e) => setCity(e.target.value)}
+                                <Form.Label className='std'>District</Form.Label>
+                                <Form.Control type="text" placeholder="District" required
+                                    value={District}
+                                    onChange={(e) => setDistrict(e.target.value)}
                                 />
                                 <Form.Control.Feedback type="invalid">
-                                    Please provide a valid City.
+                                    Please provide a valid District.
                                 </Form.Control.Feedback>
                             </Form.Group>
 
